@@ -1,6 +1,6 @@
 print("hi . I can help you to convert your units ")
-age = 1
-while age == 1 :
+Case = 1
+while case == 1 :
     print("""
     1-length
     2-currency
@@ -405,7 +405,7 @@ while age == 1 :
             if cat2 == 4:
                 print("answer : " + str(num ))
     print("thanks :) ")
-    age = int(input("""want to continue ?
+    case = int(input("""want to continue ?
      1- yes 
      2- No : """))
 
