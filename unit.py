@@ -1,440 +1,252 @@
-print("hi . I can help you to convert your units ")
-Case = 1
-while case == 1 :
-    print("""
-    1-length
-    2-currency
-    3-speed
-    4-temperature
-    5-weight
-    6-volume \n""")
-    cat = float(input("which category? "))
-    if cat == 1:
-        print("""
-        1-kilometer
-        2-meter
-        3-centimeter
-        4-mile
-        5-feet
-        6-yard
-        7-inch""")
-        cat3 = float(input("what is your input unit? "))
-        print("""
-        1-kilometer
-        2-meter
-        3-centimeter
-        4-mile
-        5-feet
-        6-yard
-        7-inch""")
-        cat2 = float(input("what is your output unit? "))
-        num = float(input("ok . what is your number ? "))
-        if cat3 == 1:
-            if cat2 == 1:
-                print("answer : " + str(num))
-            if cat2 == 2:
-                print("answer :" + str(num * 1000))
-            if cat2 == 3:
-                print("answer : " + str(num * 100000))
-            if cat2 == 4:
-                print("answer : " + str(num * 0.62137))
-            if cat2 == 5:
-                print("answer : " + str(num * 3280.839))
-            if cat2 == 6:
-                print("answer : " + str(num * 1093.61))
-            if cat2 == 7:
-                print("answer :" + str(num * 39370.07))
-        if cat3 == 2:
-            if cat2==1 :
-                    print("answer : " + str(num/1000))
-            if cat2 == 2:
-                    print("answer :" + str(num))
-            if cat2 == 3:
-                    print("answer : " + str(num * 100))
-            if cat2 == 4:
-                    print("answer : " + str(num * 0.00062137))
-            if cat2 == 5:
-                    print("answer : " + str(num * 3.280839))
-            if cat2 == 6:
-                    print("answer : " + str(num * 1.09361))
-            if cat2 == 7:
-                    print("answer :" + str(num * 39.37007))
-        if cat3 == 3:
-            if cat2 == 1:
-                    print("answer : " + str(num/100000))
-            if cat2 == 2:
-                    print("answer :" + str(num/100))
-            if cat2 == 3:
-                    print("answer : " + str(num))
-            if cat2 == 4:
-                    print("answer : " + str(num * 0.0000062137))
-            if cat2 == 5:
-                    print("answer : " + str(num * 0.03280839))
-            if cat2 == 6:
-                    print("answer : " + str(num * 0.0109361))
-            if cat2 == 7:
-                    print("answer :" + str(num * 0.3937007))
-        if cat3==3 :
-            if cat2==1:
-                print("answer : " + str(num / 100000))
-            if cat2 == 2:
-                print("answer :" + str(num / 100))
-            if cat2 == 3:
-                print("answer : " + str(num))
-            if cat2 == 4:
-                print("answer : " + str(num * 0.0000062137))
-            if cat2 == 5:
-                print("answer : " + str(num * 0.03280839))
-            if cat2 == 6:
-                print("answer : " + str(num * 0.0109361))
-            if cat2 == 7:
-                print("answer :" + str(num * 0.3937007))
-        if cat3==4 :
-            if cat2==1:
-                print("answer : " + str(num*1.609444))
-            if cat2 == 2:
-                print("answer :" + str(num*1609.344))
-            if cat2 == 3:
-                print("answer : " + str(num*160934.4))
-            if cat2 == 4:
-                print("answer : " + str(num))
-            if cat2 == 5:
-                print("answer : " + str(num *5280))
-            if cat2 == 6:
-                print("answer : " + str(num * 1760))
-            if cat2 == 7:
-                print("answer :" + str(num * 63360))
-        if cat3==5 :
-            if cat2==1:
-                print("answer : " + str(num*0.0003048))
-            if cat2 == 2:
-                print("answer :" + str(num*0.3048))
-            if cat2 == 3:
-                print("answer : " + str(num*30.48))
-            if cat2 == 4:
-                print("answer : " + str(num * 0.00018939))
-            if cat2 == 5:
-                print("answer : " + str(num))
-            if cat2 == 6:
-                print("answer : " + str(num * 0.33333))
-            if cat2 == 7:
-                print("answer :" + str(num * 12))
-        if cat3==6 :
-            if cat2==1:
-                print("answer : " + str(num*0.0009144))
-            if cat2 == 2:
-                print("answer :" + str(num*0.9144))
-            if cat2 == 3:
-                print("answer : " + str(num*91.44))
-            if cat2 == 4:
-                print("answer : " + str(num * 0.000568181))
-            if cat2 == 5:
-                print("answer : " + str(num * 3))
-            if cat2 == 6:
-                print("answer : " + str(num * 1))
-            if cat2 == 7:
-                print("answer :" + str(num * 36))
-        if cat3==7 :
-            if cat2==1:
-                print("answer : " + str(num* 0.0000254))
-            if cat2 == 2:
-                print("answer :" + str(num*0.0254))
-            if cat2 == 3:
-                print("answer : " + str(num*2.54))
-            if cat2 == 4:
-                print("answer : " + str(num * 0.0000015782828))
-            if cat2 == 5:
-                print("answer : " + str(num * 0.083333))
-            if cat2 == 6:
-                print("answer : " + str(num * 0.027777))
-            if cat2 == 7:
-                print("answer :" + str(num))
-    elif cat == 2:
-        print("""
-            1-dollar
-            2-euro
-            3-rial
-            4-lira """)
-        cat3 = float(input("what is your input unit? "))
-        print("""
-            1-dollar
-            2-euro
-            3-rial
-            4-lira """)
-        cat2 = float(input("what is your output unit? "))
-        num = float(input("ok . what is your number ? "))
-        if cat3==1:
-            if cat2 == 1:
-                print("answer : " + str(num))
-            if cat2 == 2:
-                print("answer :" + str(num*0.85))
-            if cat2 == 3:
-                print("answer : " + str(num * 230000))
-            if cat2 == 4:
-                print("answer : " + str(num * 7.83))
-        if cat3==2:
-            if cat2 == 1:
-                print("answer : " + str(num*1.17))
-            if cat2 == 2:
-                print("answer :" + str(num))
-            if cat2 == 3:
-                print("answer : " + str(num * 280000))
-            if cat2 == 4:
-                print("answer : " + str(num * 9.2))
-        if cat3==3:
-            if cat2 == 1:
-                print("answer : " + str(num/230000))
-            if cat2 == 2:
-                print("answer :" + str(num/280000))
-            if cat2 == 3:
-                print("answer : " + str(num))
-            if cat2 == 4:
-                print("answer : " + str(num/ 50000))
-        if cat3==4:
-            if cat2 == 1:
-                print("answer : " + str(num*0.13))
-            if cat2 == 2:
-                print("answer :" + str(num*0.11))
-            if cat2 == 3:
-                print("answer : " + str(num * 53000))
-            if cat2 == 4:
-                print("answer : " + str(num))
-    elif cat==3:
-        print("""
-            1-km/h
-            2-m/s
-            3-mile/h
-            4-knot
-                5-speed of light """)
-        cat3 = float(input("what is your input unit? "))
-        print("""
-            1-km/h
-            2-m/s
-            3-mile/h
-            4-knot
-                5-speed of light """)
-        cat2 = float(input("what is your output unit? "))
-        num = float(input("ok . what is your number ? "))
-        if cat3==1:
-            if cat2 == 1:
-                print("answer : " + str(num))
-            if cat2 == 2:
-                print("answer :" + str(num*0.27777))
-            if cat2 == 3:
-                print("answer : " + str(num * 0.62137))
-            if cat2 == 4:
-                print("answer : " + str(num*0.539956))
-            if cat2==5:
-                print("answer : "+str(num*0.000000000926566))
-        if cat3==2:
-            if cat2 == 1:
-                print("answer : " + str(num*3.6))
-            if cat2 == 2:
-                print("answer :" + str(num))
-            if cat2 == 3:
-                print("answer : " + str(num * 2.23693))
-            if cat2 == 4:
-                print("answer : " + str(num*1.9438))
-            if cat2==5:
-                print("answer : "+str(num*0.00000000333564))
-        if cat3==3:
-            if cat2 == 1:
-                print("answer : " + str(num*1.6093))
-            if cat2 == 2:
-                print("answer :" + str(num*0.4470))
-            if cat2 == 3:
-                print("answer : " + str(num))
-            if cat2 == 4:
-                print("answer : " + str(num*0.868976))
-            if cat2==5:
-                print("answer : "+str(num*0.0000000001491164))
-        if cat3==4:
-            if cat2 == 1:
-                print("answer : " + str(num*1.852))
-            if cat2 == 2:
-                print("answer :" + str(num*0.514444))
-            if cat2 == 3:
-                print("answer : " + str(num * 1.150779))
-            if cat2 == 4:
-                print("answer : " + str(num))
-            if cat2==5:
-                print("answer : "+str(num*0.00000000017160019))
-        if cat3==5:
-            if cat2 == 1:
-                print("answer : " + str(num*1079252849))
-            if cat2 == 2:
-                print("answer :" + str(num*299792458))
-            if cat2 == 3:
-                print("answer : " + str(num * 670616629.4))
-            if cat2 == 4:
-                print("answer : " + str(num*582749918.4))
-            if cat2==5:
-                print("answer : "+str(num))
-    elif cat==4:
-        print("""
-            1-celsius
-            2-fahrenheit
-            3-kelvin """)
-        cat3 = float(input("what is your input unit? "))
-        print("""
-            1-celsius
-            2-fahrenheit
-            3-kelvin """)
-        cat2 = float(input("what is your output unit? "))
-        num = float(input("ok . what is your number ? "))
-        if cat3==1:
-            if cat2 == 1:
-                print("answer : " + str(num))
-            if cat2 == 2:
-                print("answer :" + str(num*1.8 +32))
-            if cat2 == 3:
-                print("answer : " + str(num +273))
-        if cat3==2:
-            if cat2 == 1:
-                print("answer : " + str((num-32)/1.8))
-            if cat2 == 2:
-                print("answer :" + str(num))
-            if cat2 == 3:
-                print("answer : " + str((num-32)/1.8+273))
-        if cat3==3:
-            if cat2 == 1:
-                print("answer : " + str(num-273))
-            if cat2 == 2:
-                print("answer :" + str((num-273)*1.8+32))
-            if cat2 == 3:
-                print("answer : " + str(num))
-    elif cat==5:
-        print("""
-            1-kg
-            2-gram
-            3-pound
-            4-ounce""")
-        cat3 = float(input("what is your input unit? "))
-        print("""
-            1-kg
-            2-gram
-            3-pound
-            4-ounce""")
-        cat2 = float(input("what is your output unit? "))
-        num = float(input("ok . what is your number ? "))
-        if cat3==1:
-            if cat2 == 1:
-                print("answer : " + str(num))
-            if cat2 == 2:
-                print("answer :" + str(num*1000))
-            if cat2 == 3:
-                print("answer : " + str(num * 2.2046))
-            if cat2 == 4:
-                print("answer : " + str(num * 35.2739))
-        if cat3==2:
-            if cat2 == 1:
-                print("answer : " + str(num/1000))
-            if cat2 == 2:
-                print("answer :" + str(num))
-            if cat2 == 3:
-                print("answer : " + str(num * 0.0022046))
-            if cat2 == 4:
-                print("answer : " + str(num * 0.03527))
-        if cat3==3:
-            if cat2 == 1:
-                print("answer : " + str(num*0.4535))
-            if cat2 == 2:
-                print("answer :" + str(num*453.59))
-            if cat2 == 3:
-                print("answer : " + str(num))
-            if cat2 == 4:
-                print("answer : " + str(num * 16))
-        if cat3==4:
-            if cat2 == 1:
-                print("answer : " + str(num*0.02834))
-            if cat2 == 2:
-                print("answer :" + str(num*28.3490))
-            if cat2 == 3:
-                print("answer : " + str(num *0.0625 ))
-            if cat2 == 4:
-                print("answer : " + str(num ))
-    elif cat==6:
-        print("""
-            1-cubic meter
-            2-liter
-            3-cc
-            4-gallon""")
-        cat3 = float(input("what is your input unit? "))
-        print("""
-            1-cubic meter
-            2-liter
-            3-cc
-            4-gallon""")
-        cat2 = float(input("what is your output unit? "))
-        num = float(input("ok . what is your number ? "))
+# a list of units base on their categories
+units = (
+    ("length", (
+        "kilometer", "meter", "centimeter", "mile",
+        "feet", "yard", "inch"
+    )),
 
-        if cat3==1:
-            if cat2 == 1:
-                print("answer : " + str(num))
-            if cat2 == 2:
-                print("answer :" + str(num*1000))
-            if cat2 == 3:
-                print("answer : " + str(num * 1000000))
-            if cat2 == 4:
-                print("answer : " + str(num * 264.172052))
-        if cat3==2:
-            if cat2 == 1:
-                print("answer : " + str(num/1000))
-            if cat2 == 2:
-                print("answer :" + str(num))
-            if cat2 == 3:
-                print("answer : " + str(num * 1000))
-            if cat2 == 4:
-                print("answer : " + str(num * 0.264172052))
-        if cat3==3:
-            if cat2 == 1:
-                print("answer : " + str(num/1000000))
-            if cat2 == 2:
-                print("answer :" + str(num/1000))
-            if cat2 == 3:
-                print("answer : " + str(num))
-            if cat2 == 4:
-                print("answer : " + str(num * 0.000264172))
-        if cat3==4:
-            if cat2 == 1:
-                print("answer : " + str(num*0.00378541))
-            if cat2 == 2:
-                print("answer :" + str(num*3.78541))
-            if cat2 == 3:
-                print("answer : " + str(num *3785.411))
-            if cat2 == 4:
-                print("answer : " + str(num ))
-    print("thanks :) ")
-    case = int(input("""want to continue ?
-     1- yes 
-     2- No : """))
+    ("currency", (
+        "dollar", "euro", "rial", "lira",
+    )),
+
+    ("speed", (
+        "km/h", "m/s", "mile/h",
+        "knot", "speed of light",
+    )),
+
+    ("temperature", (
+        "celsius", "fahrenheit", "kelvin",
+    )),
+
+    ("weight", (
+        "kg", "gram", "pound", "ounce",
+    )),
+    ("volume", (
+        "cubic meter", "liter", "cc", "gallon",
+    )),
+)
+
+def main():
+    while True:
+        print("Let's CONVERT IT!\n")
+
+        # show categories
+        print(*(f"{i+1}. {c[0]}" for i, c in enumerate(units)),
+              sep='\n', end='\n\n')
+
+        selected_cat_index = int(input("which category? ")) - 1
+        units_of_cat = [
+            f"{i+1}. {u}" for i, u in enumerate(units[selected_cat_index][1])]
+
+        print(*units_of_cat, sep='\n', end='\n\n')
+        from_unit_index = int(input("what is your input unit? ")) - 1
+
+        print(*units_of_cat, sep='\n', end='\n\n')
+        to_unit_index = int(input("what is your output unit? ")) - 1
+
+        from_value = float(input("ok . what is your value ? "))
+
+        answer = convert_it(units[selected_cat_index][0],
+                            units[selected_cat_index][1][from_unit_index],
+                            from_value,
+                            units[selected_cat_index][1][to_unit_index])
+
+        print(f'answer: {answer}')
+
+        choise_to_continue = int(input(
+            "would you like to continue ?\n" "1.  Yes\n" "2.  No\n"
+        ))
+
+        if choise_to_continue != 1:
+            break
 
 
+def convert_it(category_name: str, from_unit: str, from_value: float, to_unit: str):
+    """
+    this function knows what category relates to which function,
+    in order to convert it
+    """
+
+    if category_name == 'length':
+        func = length_conv
+    elif category_name == 'currency':
+        func = currency_conv
+    elif category_name == "speed":
+        func = speed_conv
+    elif category_name == "temperature":
+        func = temperature_conv
+    elif category_name == "weight":
+        func = weight_conv
+    elif category_name == "volume":
+        func = volume_conv
+
+    return func(from_unit, from_value, to_unit)
 
 
+"""
+this is how these convert functions work:
+    they convert your value to a [base unit]
+    and then they convert that [base unit] to given unit
+"""
 
 
+def length_conv(from_unit: str, from_value: float, to_unit: str) -> float:
+
+    def kilometer_to_unit(unit, value) -> float:
+        if unit == "kilometer":
+            return (value)
+        elif unit == "meter":
+            return (value * 1000)
+        elif unit == "centimeter":
+            return (value * 100000)
+        elif unit == "mile":
+            return (value * 0.62137)
+        elif unit == "feet":
+            return (value * 3280.839)
+        elif unit == "yard":
+            return (value * 1093.61)
+        elif unit == "inch":
+            return (value * 39370.07)
+
+    def unit_to_kilometer(unit, value) -> float:
+        if unit == "kilometer":
+            return (value)
+        elif unit == "meter":
+            return (value / 1000)
+        elif unit == "centimeter":
+            return (value / 100000)
+        elif unit == "mile":
+            return (value / 0.62137)
+        elif unit == "feet":
+            return (value / 3280.839)
+        elif unit == "yard":
+            return (value / 1093.61)
+        elif unit == "inch":
+            return (value / 39370.07)
+
+    return kilometer_to_unit(to_unit, unit_to_kilometer(from_unit, from_value))
 
 
+def currency_conv(from_unit: str, from_value: float, to_unit: str) -> float:
+    def unit_to_dollar(unit, value):
+        if unit == "dollar":
+            return (value)
+        elif unit == "euro":
+            return (value / 0.85)
+        elif unit == "rial":
+            return (value / 230000)
+        elif unit == "lira":
+            return (value / 7.83)
+
+    def dollar_to_unit(unit, value):
+        if unit == "dollar":
+            return (value)
+        elif unit == "euro":
+            return (value * 0.85)
+        elif unit == "rial":
+            return (value * 230000)
+        elif unit == "lira":
+            return (value * 7.83)
+
+    return dollar_to_unit(to_unit, unit_to_dollar(from_unit, from_value))
 
 
+def speed_conv(from_unit: str, from_value: float, to_unit: str) -> float:
+    def kmh_to_unit(unit, value):
+        if unit == "km/h":
+            return (value)
+        elif unit == "m/s":
+            return (value*0.27777)
+        elif unit == "mile/h":
+            return (value * 0.62137)
+        elif unit == "knot":
+            return (value * 0.539956)
+        elif unit == "speed of light":
+            return (value * 0.000000000926566)
+
+    def unit_to_kmh(unit, value):
+        if unit == "km/h":
+            return (value)
+        elif unit == "m/s":
+            return (value / 0.27777)
+        elif unit == "mile/h":
+            return (value / 0.62137)
+        elif unit == "knot":
+            return (value/0.539956)
+        elif unit == "speed of light":
+            return (value / 0.000000000926566)
+
+    return kmh_to_unit(to_unit, unit_to_kmh(from_unit, from_value))
 
 
+def temperature_conv(from_unit: str, from_value: float, to_unit: str) -> float:
+
+    def celsius_to_unit(unit, value):
+        if from_unit == "celsius":
+            return (from_value)
+        elif from_unit == "fahrenheit":
+            return (from_value * 1.8) + 32
+        elif from_unit == "kelvin":
+            return (from_value + 273)
+
+    def unit_to_celsius(unit, value):
+        if from_unit == "celsius":
+            return (from_value)
+        elif from_unit == "fahrenheit":
+            return (from_value - 32) / 1.8
+        elif from_unit == "kelvin":
+            return (from_value - 273)
+
+    return celsius_to_unit(to_unit, unit_to_celsius(from_unit, from_value))
 
 
+def weight_conv(from_unit: str, from_value: float, to_unit: str) -> float:
+    def kg_to_unit(unit, value):
+        if from_unit == "kg":
+            return (from_value)
+        elif from_unit == "gram":
+            return (from_value * 1000)
+        elif from_unit == "pound":
+            return (from_value * 2.2046)
+        elif from_unit == "ounce":
+            return (from_value * 35.2739)
+
+    def unit_to_kg(unit, value):
+        if from_unit == "kg":
+            return (from_value)
+        elif from_unit == "gram":
+            return (from_value / 1000)
+        elif from_unit == "pound":
+            return (from_value / 2.2046)
+        elif from_unit == "ounce":
+            return (from_value / 35.2739)
+
+    return kg_to_unit(to_unit, unit_to_kg(from_unit, from_value))
 
 
+def volume_conv(from_unit: str, from_value: float, to_unit: str) -> float:
+    def cubicmeter_to_unit(unit, value):
+        if from_unit == "cubic meter":
+            return (from_value)
+        elif from_unit == "liter":
+            return (from_value * 1000)
+        elif from_unit == "cc":
+            return (from_value * 1000000)
+        elif from_unit == "gallon":
+            return (from_value * 264.172052)
+
+    def unit_to_cubicmeter(unit, value):
+        if from_unit == "cubic meter":
+            return (from_value)
+        elif from_unit == "liter":
+            return (from_value / 1000)
+        elif from_unit == "cc":
+            return (from_value / 1000000)
+        elif from_unit == "gallon":
+            return (from_value / 264.172052)
+
+    return cubicmeter_to_unit(to_unit, unit_to_cubicmeter(from_unit, from_value))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    main()
